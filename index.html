@@ -51,6 +51,34 @@
         font-style: normal;
     }
 
+    .redirect_to_spanish {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 18px;
+    }
+    .spanish-button {
+        color: black;
+        font-weight: bold;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    .spanish-button::after {
+        content: '';
+        position: absolute;
+        bottom: -2px; /* Adjust position if needed */
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: black;
+        transition: width 0.3s ease;
+    }
+    .spanish-button:hover::after {
+        width: 100%;
+    }
     #flex-container {
         margin-top: 80px;
         display: flex;
@@ -285,7 +313,12 @@
     }
 
     @media screen and (max-width: 600px) {
-
+    .redirect_to_spanish {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 9px;
+    }
     #reveal-button {
         z-index: 3;
         font-size: 14px;
@@ -359,6 +392,9 @@
 
 <body>
     <div class="main-container">
+        <div class="redirect_to_spanish">
+            <a href="https://theprojectcoem.co" class="spanish-button">Spanish</a>
+        </div>
         <div class="image-container-title">
             <img src="static/Coem.png" alt="Inverted Image" class="inverted-image">
         </div>
