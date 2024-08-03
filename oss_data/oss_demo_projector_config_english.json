@@ -1,0 +1,15 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "Short story embeddings",
+      "tensorShape": [
+        3090,
+        768
+      ],
+      "tensorPath": "tensors_generator/stories_tensors.tsv",
+      "metadataPath": "tensors_generator/stories_metadata_english.tsv",
+      "bookmarksPath": "oss_data/García_Márquez.txt"
+    }
+  ],
+  "modelCheckpointPath": "Demo datasets"
+}
