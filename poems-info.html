@@ -8,15 +8,15 @@
     <meta name="keywords" content="visualización,poemas,machine learning,javascript">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Coem proyector de poemas - Visualización de poemas">
-    <meta property="og:description" content="Visualice poemas de Autores clásicos.">
+    <meta property="og:title" content="Coem poems proyector (spanish) - poems visualization">
+    <meta property="og:description" content="Visualize poems from classical authors.">
     <meta property="og:url" content="https://estevefact.github.io/authorToAuthor3D.html">
     <meta property="og:image"
         content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
 
     <meta name="twitter:card" value="summary_large_image">
-    <meta name="twitter:title" content="Coem proyector de poemas - Visualización de poemas">
-    <meta name="twitter:description" content="Visualice poemas de Autores clásicos.">
+    <meta name="twitter:title" content="Coem poems proyector (spanish) - poems visualization">
+    <meta name="twitter:description" content="Visualize poems from classical authors.">
     <meta name="twitter:url" content="">
     <meta name="twitter:image"
         content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
@@ -27,7 +27,7 @@
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
     <meta http-equiv="pragma" content="no-cache">
 
-    <meta name="author" content="Esteban Velásquez y Agustín Vallejo">
+    <meta name="author" content="Esteban Velásquez, Isabela Hernández y Agustín Vallejo">
     <title>Poem Info</title>
     <style>
         .info-box {
@@ -631,16 +631,13 @@
           <img src="static/Coem.png" alt="Logo" />
         </div>
         <div class="dropdown-2 Stories-Authors-btn" id="dropdown-general">
-          <button class="dropbtn-general" id="Stories-Authors-btn"> Explorar Coem </button>
+          <button class="dropbtn-general" id="Stories-Authors-btn"> Explore Coem </button>
           <div class="dropdown-content-2">
             <span 
-            data-filter="stories-authors" onclick="window.location.href='/authorToAuthor3DSmall.html'">Ver Autores de Cuentos
+            data-filter="stories-authors" onclick="window.location.href='/authorToAuthor3DSmall.html'">Stories Authors
             </span>
             <span 
-            data-filter="stories-embeddings" onclick="window.location.href='/embeddings.html'" > Ver Embeddings de Cuentos
-            </span>
-            <span 
-            data-filter="Autores" onclick="window.location.href='/authorToAuthor3DSmall_english.html'" > Explorar Cuentos en Inglés
+            data-filter="stories-embeddings" onclick="window.location.href='/embeddings.html'" > Embeddings of Coems
             </span>
           </div>
           </button>
@@ -650,12 +647,12 @@
 
     <div id="search-container" >
         <div class="dropdown">
-            <button class="dropbtn" id="filter-button" > Filtrar por Título</button>
+            <button class="dropbtn" id="filter-button" > Filter by Title</button>
             <div class="dropdown-content">
-              <span data-filter="id">Título</span>
-              <span data-filter="author_name">Autor</span>
-              <span data-filter="country">País</span>
-              <span data-filter="birth_year">Año de nacimiento</span>
+              <span data-filter="id">Title</span>
+              <span data-filter="author_name">Author</span>
+              <span data-filter="country">Country</span>
+              <span data-filter="birth_year">Birth Year</span>
             </div>
           </div>
         <input type="text" id="author-search" placeholder="Buscar por título...">
@@ -663,9 +660,9 @@
     </div>
     <div id="content"></div>
     <div id="container-poem">
-        <div class="flex-item info-item">Título poema: <span id="poemTitle">Loading poems...</span></div>
+        <div class="flex-item info-item">Poem Title: <span id="poemTitle">Loading poems...</span></div>
         <div class="flex-item info-text" id="poemText" > </div>
-        <div  class="mini-title" > Poemas de autores relacionados:</div>
+        <div  class="mini-title" > Related poems from related authors:</div>
         <div id="suggested-author-poems"></div>
     </div>
     

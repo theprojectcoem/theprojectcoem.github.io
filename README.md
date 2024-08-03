@@ -2,7 +2,7 @@
 This is part of the Coem project (The union of Poems and Cuentos) and in this part I'm trying to visualize all classical short stories and poems less than 8 minutes long into an embeddings map of 3092 classical short stories and 22540 poems and Also listen to the stories through Carl Sagan Voice in spanish and some of them in english too.
 The english version of all the poems cannot be hosted in GitHub. The links Visualization was done thanks to the help of @AgustinVallejo!
 
-The landing page is here [Coem](https://estevefact.github.io/), Visualize the embeddings here [Coem embeddings](https://estevefact.github.io/embeddings.html). the links here [Coem Links](https://estevefact.github.io/authorToAuthor3D.html) and the poems here [Coem Poems](https://estevefact.github.io/poems-info.html)
+The landing page is here [Coem](https://theprojectcoem.github.io/), Visualize the embeddings here [Coem embeddings](https://theprojectcoem.github.io/embeddings.html). the links here [Coem Links](https://theprojectcoem.github.io/authorToAuthor3D.html) and the poems here [Coem Poems](https://theprojectcoem.github.io/poems-info.html)
 
 
 # Limits
