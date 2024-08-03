@@ -828,14 +828,14 @@
       if (popup.style.display === "none" || popup.style.display === "") {
         popup.style.display = "flex";
         popup.style.width = "25%;";
-        toggleLink.textContent = "Ocultar Info Autor";
+        toggleLink.textContent = "Hide Author's Info";
         container.style.width = "calc(100% - 25%)";
         container.style.marginLeft = "25%";
 
         loadAuthorInfo();
       } else {
         popup.style.display = "none";
-        toggleLink.textContent = "Mostrar información Autor";
+        toggleLink.textContent = "Show Author Infor";
         container.style.width = "100%";
         container.style.marginLeft = "0";
       }
@@ -890,7 +890,7 @@
             );
           document.getElementById("author-info-container").innerHTML =
             rendered;
-          updateAudioSource(`audios_es/${author.story_id}.mp3`);
+          updateAudioSource(`audios_en/${author.story_id}.mp3`);
           resetAuthorImage(author.image); // Defined in particleDraw.js
           updateTopAuthors(author);
           updateStories(author);
@@ -956,7 +956,7 @@
             event.preventDefault();
             // Add your desired behavior when a story is clicked
             console.log(`Story ID: ${storyId}`);
-            updateAudioSource(`audios_es/${storyId}.mp3`);
+            updateAudioSource(`audios_en/${storyId}.mp3`);
             popup.scrollTo({ top: 0, behavior: 'smooth' });
             document.getElementById('exampleStory').textContent = storyTitle; 
         });
@@ -1035,7 +1035,7 @@
       var popup = document.getElementById("popup");
       var container = document.getElementById("container");
       var toggleLink = document.getElementById("toggle-popup-btn");
-      toggleLink.textContent = "Ocultar Info Autor";
+      toggleLink.textContent = "Hide Author's info";
       popup.style.display = "flex";
       container.style.marginLeft = "25%";
       container.style.width = "calc(100% - 25%)";
@@ -1138,8 +1138,8 @@
         option.addEventListener('click', function () {
           selectedFilter = this.dataset.filter;
           const filterText = this.textContent;
-          filterButton.textContent = `Filtrar por ${filterText}`;
-          searchInput.placeholder = `Buscar por ${selectedFilter.replace('_', ' ')}...`;
+          filterButton.textContent = `Filter by ${filterText}`;
+          searchInput.placeholder = `Search by ${selectedFilter.replace('_', ' ')}...`;
         });
       });
 

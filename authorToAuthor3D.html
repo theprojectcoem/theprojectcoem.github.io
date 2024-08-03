@@ -672,32 +672,29 @@
   <body>
     <div id="appbar">
       <div id="title-1">
-       Relaciones Autores
+       Authors Relations
         <button
           id="toggle-popup-btn"
           onclick="togglePopup();"
           title="Toggle Popup"
         >
-          Ver Autor
+          Follow Authors
         </button>
       </div>
       <div class="center-section">
         <img src="static/Coem.png" alt="Logo" />
       </div>
       <div class="dropdown-2 Stories-Authors-btn" id="dropdown-general">
-        <button class="dropbtn-general" id="Stories-Authors-btn"> Explorar Coem </button>
+        <button class="dropbtn-general" id="Stories-Authors-btn"> Explore Coem </button>
         <div class="dropdown-content-2">
           <span 
-          data-filter="stories-authors" onclick="window.location.href='/authorToAuthor3DSmall.html'">Ver Autores Cuentos
+          data-filter="stories-authors" onclick="window.location.href='/authorToAuthor3DSmall.html'">Stories authors
           </span>
           <span 
-          data-filter="stories-embeddings" onclick="window.location.href='/embeddings.html'" > Ver Embeddings de Cuentos
+          data-filter="stories-embeddings" onclick="window.location.href='/embeddings.html'" > Embeddings Poems and Stories
           </span>
           <span 
-          data-filter="Poems" onclick="window.location.href='/poems-info.html'" > Explorar Poemas
-          </span>
-          <span 
-          data-filter="Autores" onclick="window.location.href='/authorToAuthor3DSmall_english.html'" > Explorar Cuentos en Inglés
+          data-filter="Poems" onclick="window.location.href='/poems-info.html'" > Explore Poems
           </span>
         </div>
         </button>
@@ -711,13 +708,13 @@
     <div id="popup">
       <div id="search-container">
         <div class="dropdown">
-          <button class="dropbtn" id="filter-button" > Filtrar por Nombre</button>
+          <button class="dropbtn" id="filter-button" > Filter by Name</button>
           <div class="dropdown-content">
-            <span data-filter="id">Nombre</span>
-            <span data-filter="country">País</span>
-            <span data-filter="birth_year">Año de nacimientos</span>
-            <span data-filter="death_year">Año de muerte</span>
-            <span data-filter="genre">Género</span>
+            <span data-filter="id">Name</span>
+            <span data-filter="country">Country</span>
+            <span data-filter="birth_year">Birth year</span>
+            <span data-filter="death_year">Death year</span>
+            <span data-filter="genre">Genre</span>
           </div>
         </div>
         <input type="text" id="author-search" placeholder="Buscar a un autor...">
@@ -725,9 +722,9 @@
         <div id="autocomplete-container"></div>
       </div>
       <div id="author-info-container">></div>
-      <button id="follow-author-btn">Seguir Autor</button>
+      <button id="follow-author-btn">Follow Author</button>
       <div id="top-authors-container">
-        <h3>Top 5 Autores relacionados</h3>
+        <h3>Top 5 Related Authors</h3>
         <ul id="top-authors-list"></ul>
       </div>
       <form id="donate" action="https://www.paypal.com/donate" method="post" target="_top">
@@ -755,7 +752,7 @@
         if (popup.style.display === "none" || popup.style.display === "") {
           popup.style.display = "flex";
           popup.style.width = "25%;";
-          toggleLink.textContent = "Ocultar Info Autor";
+          toggleLink.textContent = "Hide Author info";
           container.style.width = "calc(100% - 25%)";
           container.style.marginLeft = "25%";
           if (isCellphone()) {
@@ -768,7 +765,7 @@
           loadAuthorInfo();
         } else {
           popup.style.display = "none";
-          toggleLink.textContent = "Mostrar información Autor";
+          toggleLink.textContent = "Show Author info";
           container.style.width = "100%";
           container.style.marginLeft = "0";
           if (isCellphone()) {
@@ -828,7 +825,7 @@
                 author.story_name
               );
             document.getElementById("author-info-container").innerHTML = rendered;
-            updateAudioSource(`audios_es/${author.story_id}.mp3`);
+            updateAudioSource(`audios_en/${author.story_id}.mp3`);
             resetAuthorImage(author.image); // Defined in particleDraw.js
             updateTopAuthors(author);
                   // Apply additional styles dynamically if it's a cellphone
@@ -948,7 +945,7 @@
         var popup = document.getElementById("popup");
         var container = document.getElementById("container");
         var toggleLink = document.getElementById("toggle-popup-btn");
-        toggleLink.textContent = "Ocultar Info Autor";
+        toggleLink.textContent = "Hide Author info";
         popup.style.display = "flex";
         container.style.marginLeft = "25%";
         container.style.width = "calc(100% - 25%)";
@@ -1049,8 +1046,8 @@
           option.addEventListener('click', function () {
             selectedFilter = this.dataset.filter;
             const filterText = this.textContent;
-            filterButton.textContent = `Filtrar por ${filterText}`;
-            searchInput.placeholder = `Buscar por ${selectedFilter.replace('_', ' ')}...`;
+            filterButton.textContent = `Filter vy ${filterText}`;
+            searchInput.placeholder = `Search vy ${selectedFilter.replace('_', ' ')}...`;
           });
         });
 
