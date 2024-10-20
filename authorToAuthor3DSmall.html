@@ -15,14 +15,14 @@
   <meta property="og:description" content="Visualize stories and poems from classical authors.">
   <meta property="og:url" content="https://theprojectcoem.github.io/authorToAuthor3D.html">
   <meta property="og:image"
-      content="https://raw.githubusercontent.com/theprojectcoem/theprojectcoem.github.io/main/preview.png">
+    content="https://raw.githubusercontent.com/theprojectcoem/theprojectcoem.github.io/main/preview.png">
 
   <meta name="twitter:card" value="summary_large_image">
   <meta name="twitter:title" content="Coem Stories poems and authors proyector - Visualization of coems">
   <meta name="twitter:description" content="Visualize stories and poems from classical authors.">
   <meta name="twitter:url" content="">
   <meta name="twitter:image"
-      content="https://raw.githubusercontent.com/theprojectcoem/theprojectcoem.github.io/main/preview.png">
+    content="https://raw.githubusercontent.com/theprojectcoem/theprojectcoem.github.io/main/preview.png">
 
   <meta http-equiv="cache-control" content="max-age=0">
   <meta http-equiv="cache-control" content="no-cache">
@@ -330,27 +330,33 @@
     }
 
     .top-authors-list {
-        padding: 5px;
-        color:#007bff;
-        position: relative;
-        cursor: pointer;
-        display: inline-block; /* Make it inline-block to ensure the width transition works */
-        text-decoration: none; /* Remove underline from links */
-      }
-    .top-authors-list::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0; /* Start with zero width */
-        height: 1px;
-        background-color: #2b02e4;
-        transition: width 0.3s ease; /* Transition effect for width */
+      padding: 5px;
+      color: #007bff;
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      /* Make it inline-block to ensure the width transition works */
+      text-decoration: none;
+      /* Remove underline from links */
     }
 
-      .top-authors-list:hover::after {
-          width: 100%; /* Expand to full width on hover */
-      }
+    .top-authors-list::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      /* Start with zero width */
+      height: 1px;
+      background-color: #2b02e4;
+      transition: width 0.3s ease;
+      /* Transition effect for width */
+    }
+
+    .top-authors-list:hover::after {
+      width: 100%;
+      /* Expand to full width on hover */
+    }
 
     #stories-list {
       list-style-type: none;
@@ -363,101 +369,110 @@
 
     .stories-list {
       padding: 5px;
-      color:#007bff;
+      color: #007bff;
       position: relative;
       cursor: pointer;
-      display: inline-block; /* Make it inline-block to ensure the width transition works */
-      text-decoration: none; /* Remove underline from links */
+      display: inline-block;
+      /* Make it inline-block to ensure the width transition works */
+      text-decoration: none;
+      /* Remove underline from links */
     }
+
     .stories-list::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0; /* Start with zero width */
-        height: 1px;
-        background-color: #2b02e4;
-        transition: width 0.3s ease; /* Transition effect for width */
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      /* Start with zero width */
+      height: 1px;
+      background-color: #2b02e4;
+      transition: width 0.3s ease;
+      /* Transition effect for width */
     }
 
     .stories-list:hover::after {
-        width: 100%; /* Expand to full width on hover */
+      width: 100%;
+      /* Expand to full width on hover */
     }
 
-      #Stories-Authors-btn {
-        width: 10%;
-        display: absolute;
-        align-items: center;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 3px 5px;
-        cursor: pointer;
-        font-size: 16px;
-        border-radius: 5px;
-        position: fixed;
-        top:12px;
-        left:90%;
-        padding: 10px 15px;
-      }
-      #dropbtn-general {
-        font-family: "Roboto", sans-serif;
-        background-color: #04abd1;
-        color: white;
-        padding: 10px 15px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        border-radius: 6px;
-        display: absolute;
-        width: 14%;
-        position: fixed;
-        left:80%;
-        top:20px;
-      }
-      .dropdown-2 {
-          position: relative;
-          display: inline-block;
-          z-index: 999999;
-      }
+    #Stories-Authors-btn {
+      width: 10%;
+      display: absolute;
+      align-items: center;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 3px 5px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      position: fixed;
+      top: 12px;
+      left: 90%;
+      padding: 10px 15px;
+    }
 
-      .dropbtn-general:hover, .dropbtn-general:focus {
-          background-color: #2980b9;
-      }
+    #dropbtn-general {
+      font-family: "Roboto", sans-serif;
+      background-color: #04abd1;
+      color: white;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      display: absolute;
+      width: 14%;
+      position: fixed;
+      left: 80%;
+      top: 20px;
+    }
 
-      .dropdown-content-2 {
-          display: none;
-          position: absolute;
-          background-color: #007bff;
-          color: white;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 999999;
-          border-radius: 5px;
-          width: 12%;
-          position: fixed;
-          font-size: 16px;
-          left:86%;
-          top:45px;
-      }
+    .dropdown-2 {
+      position: relative;
+      display: inline-block;
+      z-index: 999999;
+    }
 
-      .dropdown-content-2 span {
-          padding: 6px 7px;
-          text-decoration: none;
-          color: white;
-          display: block;
-          cursor: pointer;
-          border-radius: 5px;
-          z-index: 999999;
-          font-size: 16px;
-      }
+    .dropbtn-general:hover,
+    .dropbtn-general:focus {
+      background-color: #2980b9;
+    }
 
-      .dropdown-content-2 span:hover {
-          background-color: #1b0076;
-      }
+    .dropdown-content-2 {
+      display: none;
+      position: absolute;
+      background-color: #007bff;
+      color: white;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 999999;
+      border-radius: 5px;
+      width: 12%;
+      position: fixed;
+      font-size: 16px;
+      left: 86%;
+      top: 45px;
+    }
 
-      .dropdown-2:hover .dropdown-content-2 {
-          display: block;
-      }
+    .dropdown-content-2 span {
+      padding: 6px 7px;
+      text-decoration: none;
+      color: white;
+      display: block;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 999999;
+      font-size: 16px;
+    }
+
+    .dropdown-content-2 span:hover {
+      background-color: #1b0076;
+    }
+
+    .dropdown-2:hover .dropdown-content-2 {
+      display: block;
+    }
 
     @media screen and (max-width: 600px) {
 
@@ -474,9 +489,10 @@
         border-radius: 5px;
         max-height: 16px;
         position: fixed;
-        top:13px;
-        left:85%;
+        top: 13px;
+        left: 85%;
       }
+
       #dropbtn-general {
         font-family: "Roboto", sans-serif;
         background-color: #04abd1;
@@ -490,55 +506,57 @@
         width: 14%;
         max-height: 16px;
         position: fixed;
-        left:80%;
-        top:5px;
-      }
-      .dropdown-2 {
-          position: relative;
-          display: inline-block;
-          z-index: 999999;
+        left: 80%;
+        top: 5px;
       }
 
-      .dropbtn-general:hover, .dropbtn-general:focus {
-          background-color: #2980b9;
+      .dropdown-2 {
+        position: relative;
+        display: inline-block;
+        z-index: 999999;
+      }
+
+      .dropbtn-general:hover,
+      .dropbtn-general:focus {
+        background-color: #2980b9;
       }
 
       .dropdown-content-2 {
-          display: none;
-          position: absolute;
-          background-color: #007bff;
-          color: white;
-          
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 999999;
-          border-radius: 5px;
-          width: 20%;
-          position: fixed;
-          font-size: 9px;
-          left:70%;
-          top:25px;
+        display: none;
+        position: absolute;
+        background-color: #007bff;
+        color: white;
+
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 999999;
+        border-radius: 5px;
+        width: 20%;
+        position: fixed;
+        font-size: 9px;
+        left: 70%;
+        top: 25px;
       }
 
       .dropdown-content-2 span {
-          padding: 6px 7px;
-          text-decoration: none;
-          color: white;
-          display: block;
-          cursor: pointer;
-          border-radius: 5px;
-          z-index: 999999;
-          font-size: 9px;
+        padding: 6px 7px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 999999;
+        font-size: 9px;
       }
 
       .dropdown-content-2 span:hover {
-          background-color: #1b0076;
+        background-color: #1b0076;
       }
 
       .dropdown-2:hover .dropdown-content-2 {
-          display: block;
+        display: block;
       }
 
-      
+
       #appbar {
         width: 100%;
         display: flex;
@@ -656,7 +674,8 @@
         border-radius: 10px;
         border: 1px solid #ccc;
         font-size: 6px;
-        padding-left: 10px; /* To make space for the magnifying glass icon */
+        padding-left: 10px;
+        /* To make space for the magnifying glass icon */
       }
 
       #search-icon {
@@ -664,16 +683,17 @@
         position: absolute;
         right: 10px;
         pointer-events: none;
-    }
+      }
 
-    .autocomplete-container {
+      .autocomplete-container {
         position: absolute;
         border: 1px solid #ccc;
         background-color: white;
-        max-height:150px;
+        max-height: 150px;
         overflow-y: auto;
         font-size: 8px;
-        width: calc(100% - 20px); /* Adjust the width as necessary */
+        width: calc(100% - 20px);
+        /* Adjust the width as necessary */
         z-index: 1000;
       }
 
@@ -715,7 +735,7 @@
         position: absolute;
         left: 0;
         width: 40px;
-        height:15px;
+        height: 15px;
       }
 
       #info-item {
@@ -758,14 +778,11 @@
     <div class="dropdown-2 Stories-Authors-btn" id="dropdown-general">
       <button class="dropbtn-general" id="Stories-Authors-btn"> Explore Coem </button>
       <div class="dropdown-content-2">
-        <span 
-        data-filter="stories-authors" onclick="window.location.href='/authorToAuthor3D.html'">Explore All Authors
+        <span data-filter="stories-authors" onclick="window.location.href='/authorToAuthor3D.html'">Explore All Authors
         </span>
-        <span 
-        data-filter="stories-embeddings" onclick="window.location.href='/embeddings.html'" > Stories Embeddings
+        <span data-filter="stories-embeddings" onclick="window.location.href='/embeddings.html'"> Stories Embeddings
         </span>
-        <span 
-        data-filter="Poems" onclick="window.location.href='/poems-info.html'" > Explore Poems 
+        <span data-filter="Poems" onclick="window.location.href='/poems-info.html'"> Explore Poems
         </span>
       </div>
       </button>
@@ -851,12 +868,12 @@
           document.getElementById("popup-audio").src = audioUrl;
         } else {
           // If the response is not ok, log a message or handle the error and default audio
-          document.getElementById("popup-audio").src = `/static/tenquita.mp3`;
+          document.getElementById("popup-audio").src = `/static/They_are_made_out_of_meat_terry.mp3`;
           console.error(`Audio file not found: ${audioUrl} (status: ${response.status})`);
         }
       } catch (error) {
         // Catch any network errors and default audio
-        document.getElementById("popup-audio").src = `/static/tenquita.mp3`;
+        document.getElementById("popup-audio").src = `/static/They_are_made_out_of_meat_terry.mp3`;
         console.error(`Error fetching audio file: ${error}`);
       }
     }
@@ -890,7 +907,12 @@
             );
           document.getElementById("author-info-container").innerHTML =
             rendered;
-          updateAudioSource(`audios_en/${author.story_id}.mp3`);
+          // Check if the 'stories' object exists and has at least one key
+          let firstStoryId = "none";  // Default to "none"
+          if (author.stories && Object.keys(author.stories).length > 0) {
+            firstStoryId = Object.keys(author.stories)[0];  // Get the first story key
+          }
+          updateAudioSource(`audios_en/${firstStoryId}.mp3`);
           resetAuthorImage(author.image); // Defined in particleDraw.js
           updateTopAuthors(author);
           updateStories(author);
@@ -953,18 +975,18 @@
         listLink.textContent = storyTitle;
         listLink.href = "#";
         listLink.addEventListener('click', (event) => {
-            event.preventDefault();
-            // Add your desired behavior when a story is clicked
-            console.log(`Story ID: ${storyId}`);
-            updateAudioSource(`audios_en/${storyId}.mp3`);
-            popup.scrollTo({ top: 0, behavior: 'smooth' });
-            document.getElementById('exampleStory').textContent = storyTitle; 
+          event.preventDefault();
+          // Add your desired behavior when a story is clicked
+          console.log(`Story ID: ${storyId}`);
+          updateAudioSource(`audios_en/${storyId}.mp3`);
+          popup.scrollTo({ top: 0, behavior: 'smooth' });
+          document.getElementById('exampleStory').textContent = storyTitle;
         });
 
         listItem.appendChild(listLink);
         listLink.classList.add('stories-list');
         storiesList.appendChild(listItem);
-    });
+      });
     };
 
 
