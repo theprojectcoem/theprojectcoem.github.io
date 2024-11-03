@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <link rel="icon" type="image/png" href="static/favicon.png" />
 
 <head>
@@ -27,7 +27,7 @@
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
     <meta http-equiv="pragma" content="no-cache">
 
-    <meta name="author" content="Esteban Velásquez, Isabela Hernández y Agustín Vallejo">
+    <meta name="author" content="Esteban Velásquez y Agustín Vallejo">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
@@ -39,7 +39,6 @@
         html {
             margin: 0;
             padding: 0;
-            height: 400%;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -69,6 +68,7 @@
             display: inline-block;
             text-decoration: none;
             background-color: transparent;
+            font-size: 22px;
         }
 
         .spanish-button::after {
@@ -187,7 +187,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 3;
-            font-size: 20px;
+            font-size: 21px;
             cursor: pointer;
             font-family: 'Allura', cursive;
         }
@@ -201,7 +201,7 @@
             transform: translate(-50%, -50%);
             /* Offset by 50% to center */
             z-index: 3;
-            font-size: 20px;
+            font-size: 21px;
             cursor: pointer;
             font-family: 'Allura', cursive;
         }
@@ -215,7 +215,7 @@
             transform: translate(-50%, -50%);
             /* Offset by 50% to center */
             z-index: 3;
-            font-size: 20px;
+            font-size: 21px;
             cursor: pointer;
             font-family: 'Allura', cursive;
         }
@@ -229,7 +229,7 @@
             transform: translate(-50%, -50%);
             /* Offset by 50% to center */
             z-index: 3;
-            font-size: 20px;
+            font-size: 21px;
             cursor: pointer;
             font-family: 'Allura', cursive;
         }
@@ -447,32 +447,39 @@
         </div>
 
         <div class="container">
-            <button id="reveal-button" onclick="window.location.href='/authorToAuthor3DSmall.html'">Explore Narrated
-                Stories </button>
+            <button id="reveal-button" onclick="window.location.href='/stories-info.html'">Explore Stories
+                </button>
             <img src="static/imgs/quiroga.png" alt="Background Image" id="background-image">
         </div>
 
         <div class="container2">
-            <button id="reveal-button" onclick="window.location.href='/poems-info.html'">Explore Written Poems</button>
+            <button id="reveal-button" onclick="window.location.href='/poems-info.html'">Explore Poems (Spanish)
+                Escritos</button>
             <img src="static/imgs/Pizarnik.png" alt="Background Image" id="background-image">
         </div>
     </div>
     <div class=container3>
-        <button id="reveal-button-2" onclick="window.location.href='/authorToAuthor3D.html'">Explore Authors Relations
+        <button id="reveal-button-2" onclick="window.location.href='/authorToAuthor3DSmall.html'">Explore Authors Map
         </button>
         <img src="Authors_full.png" alt="img-coem" class="img-coem">
     </div>
 
     <div class=container4>
-        <button id="reveal-button-3" onclick="window.location.href='/embeddings.html'">Embeddings of stories and poems
+        <button id="reveal-button-3" onclick="window.location.href='/embeddings.html'">Embeddings of Stories and Poems
         </button>
         <img src="borges_embeddings.png" alt="img-coem" class="img-coem">
+    </div>
+
+    <div class=container5>
+        <button id="reveal-button-4" onclick="window.location.href='/authorToAuthor3D.html'">Explore
+            all authors</button>
+        <img src="authorsenglish.png" alt="img-coem" class="img-coem">
     </div>
 
     <footer>
         Disclaimer: This is a small project made by one person using free software tools to navigate classical
         literature.
-        In case of any complaints, please send an email to <a
+        In case of any complaints, or suggestions please send an email to <a
             href="mailto:theprojectcoem@gmail.com">theprojectcoem@gmail.com</a>
         <div class="social-icons">
             <br>
@@ -482,7 +489,7 @@
             <a href="https://www.youtube.com/channel/UCsA5OOXPr1bABWuZ_pWIB6g" target="_blank">
                 <i class="fab fa-youtube"></i>
             </a>
-            <a href="https://podcasters.spotify.com/pod/show/coem4" target="_blank">
+            <a href="https://open.spotify.com/show/0JNvCRIMQSHHGlur0kognQ" target="_blank">
                 <i class="fab fa-spotify"></i>
             </a>
             <a href="https://www.tiktok.com/@theprojectcoem?lang=es" target="_blank">
